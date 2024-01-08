@@ -1,0 +1,82 @@
+.cardStack {
+    width: 100px;
+    height: 150px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1px;
+    justify-content: center;
+}
+
+#lightBlue {
+    background-color: lightBlue;
+}
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#brown {
+    background-color: #663300;
+}
+
+#pink {
+    background-color: #cc44cc;
+}
+
+#darkBlue {
+    background-color: darkBlue;
+    color: white;
+}
+
+#railroad {
+    background-color: black;
+    color: white;
+}
+
+#utility {
+    background-color: gray;
+}
+.cardStack:hover {
+    background-color: #2980b9;
+}
+
+.card {
+    width: 100px;
+    height: 15px;
+    margin: 5% auto;
+    cursor: pointer;
+    background-color: antiquewhite;
+    font-size: 13px;
+}
+
+h1 {
+    text-align: center;
+    /* put on its own line */
+    margin: 0;
+}
+
+.wallet {
+    width: 100px;
+    height: 200px;
+    margin: 10px 10px;
+    cursor: pointer;
+    background-color: burlywood;
+}
