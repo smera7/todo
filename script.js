@@ -46,43 +46,100 @@ export function moveToWallet(event) {
     wallet.appendChild(card);
     
     // add click event listener to the card in the wallet
-    card.addEventListener('click', moveBackToStack);
+    // card.addEventListener('click', moveBackToStack);
     
     console.log("I'm moving");
 
-    // Create a food div
-    const foodDiv = document.createElement('div');
-    foodDiv.className = 'food';
-    foodDiv.textContent = randomFood;
+    // // Create a food div
+    // const foodDiv = document.createElement('div');
+    // foodDiv.className = 'food';
+    // // foodDiv.textContent = randomFood;
 
-    // Position the food div where the user clicked
-    foodDiv.style.left = `${event.clientX}px`;
-    foodDiv.style.top = `${event.clientY}px`;
+    // // Position the food div where the user clicked
+    // foodDiv.style.left = `${event.clientX}px`;
+    // foodDiv.style.top = `${event.clientY}px`;
 
-    // Append the food div to the container
-    foodContainer.appendChild(foodDiv);
+    // // Append the food div to the container
+    // foodContainer.appendChild(foodDiv);
 }
 
-function moveBackToStack() {
-    // delete card from wallet
-    const card = this; // Assuming 'this' refers to the card element being clicked
-    const wallet = card.parentElement;
-    wallet.removeChild(card);
+// function moveBackToStack() {
+//     // delete card from wallet
+//     const card = this; // Assuming 'this' refers to the card element being clicked
+//     const wallet = card.parentElement;
+//     wallet.removeChild(card);
     
-    // move card back to the original stack
-    const stack = document.querySelector('.card-stack'); // Assuming the original stack has the class 'card-stack'
-    stack.appendChild(card);
+//     // move card back to the original stack
+//     const stack = document.querySelector('.cardStack'); // Assuming the original stack has the class 'card-stack'
+//     stack.appendChild(card);
     
-    // add click event listener to the card in the stack
-    card.addEventListener('click', moveToWallet);
+//     // add click event listener to the card in the stack
+//     card.addEventListener('click', moveToWallet);
     
-    console.log("I'm moving back");
-}
+//     console.log("I'm moving back");
+// }
 
 const brownCards = document.querySelectorAll('#brown .card');
 
 brownCards.forEach(card => {
     card.addEventListener('click', moveToWallet);
 });
-// mediterranean.addEventListener('click', moveToWallet);
-// baltic.addEventListener('click', moveToWallet);
+
+const lightBlueCards = document.querySelectorAll('#lightBlue .card');
+
+lightBlueCards.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+}
+);
+
+const pinkCards = document.querySelectorAll('#pink .card');
+
+pinkCards.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+}
+);
+
+const orangeCards = document.querySelectorAll('#orange .card');
+
+orangeCards.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+}
+);
+
+const redCards = document.querySelectorAll('#red .card');
+
+redCards.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+});
+
+const yellowCards = document.querySelectorAll('#yellow .card');
+
+yellowCards.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+}
+);
+
+const greenCards = document.querySelectorAll('#green .card');
+
+greenCards.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+});
+
+const blueCards = document.querySelectorAll('#darkBlue .card');
+
+blueCards.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+});
+
+const railroads = document.querySelectorAll('#railroad .card');
+
+railroads.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+});
+
+const utilities = document.querySelectorAll('#utility .card');
+
+utilities.forEach(card => {
+    card.addEventListener('click', moveToWallet);
+});
+

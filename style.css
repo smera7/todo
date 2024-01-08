@@ -10,7 +10,6 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1px;
-    justify-content: center;
 }
 
 #lightBlue {
@@ -43,28 +42,30 @@ body {
 
 #darkBlue {
     background-color: darkBlue;
-    color: white;
 }
 
 #railroad {
     background-color: black;
-    color: white;
 }
 
 #utility {
     background-color: gray;
 }
-.cardStack:hover {
+/* .cardStack:hover {
     background-color: #2980b9;
-}
+} */
 
 .card {
     width: 100px;
-    height: 15px;
+    height: 30px;
     margin: 5% auto;
     cursor: pointer;
     background-color: antiquewhite;
     font-size: 13px;
+}
+
+.card:hover {
+    background-color: #8bb6d3;
 }
 
 h1 {
