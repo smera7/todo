@@ -143,3 +143,37 @@ utilities.forEach(card => {
     card.addEventListener('click', moveToWallet);
 });
 
+// CALCULATOR
+const computationInput = document.getElementById('computation');
+const outputSpan = document.getElementById('output');
+const clearButton = document.getElementById('clearzy');
+const equalsButton = document.getElementById('displayequals');
+
+// Add event listener to equals button
+equalsButton.addEventListener('click', performComputation);
+
+// Function to perform computation
+function performComputation(event) {
+    event.preventDefault();
+    
+    const computation = computationInput.value;
+    console.log(computation);
+    var result = eval(computation);
+    
+    // Perform computation logic here
+    
+    // Update output
+    outputSpan.textContent = result;
+}
+
+// Add event listener to clear button
+clearButton.addEventListener('click', clearComputation);
+
+// Function to clear computation
+function clearComputation(event) {
+    event.preventDefault();
+    
+    computationInput.value = '';
+    outputSpan.textContent = '';
+}
+
